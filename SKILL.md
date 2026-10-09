@@ -64,7 +64,7 @@ If a claim can't be mapped onto one of these — or an equivalent, evidenced way
 
 ## Coordinator / Worker Orchestration
 
-- **Coordinator**: plans the work, owns the scope audit, holds the honesty line, gates every merge. Spends few premium tokens; does not do heavy building or first-pass verification itself.
+- **Coordinator**: plans the work, owns the scope audit, holds the honesty line, gates every merge. Heavy building and first-pass verification go to workers to keep premium-model cost low.
 - **Workers** (cheaper models, run in parallel where available): do the heavy building, and do the independent adversarial verification.
 - **Cost discipline**: coordinator stays lean, workers scale out. If you hit the budget guardrail, stop and leave an honest status doc — never overclaim to close it out. Parallelism is a performance optimization, not a correctness requirement.
 - **Graceful degradation**: if parallel subagents aren't available, run the identical loop serially. The verifier still adopts a deliberately fresh, adversarial vantage — new context, re-derives evidence from scratch, is instructed to refute rather than confirm, and does **not** read the builder's notes or prior assertions. The coordinator still gates.
