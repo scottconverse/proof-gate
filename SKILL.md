@@ -31,7 +31,7 @@ Everything rests on one rule: **a claim is proven only by exercising the real ar
 
 ## When NOT to use this
 
-Use for work where a wrong done claim is expensive; for trivial edits the overhead is not worth it.
+Trivial edits, cosmetic changes, throwaway prototypes, anything where a wrong "done" claim costs nothing. The overhead only pays for itself when being wrong is expensive.
 
 ## The Honesty Contract
 
@@ -78,7 +78,9 @@ The final gate reproduces from a genuinely clean environment (fresh VM, containe
 - [ ] Install/setup performed exactly as a real consumer would perform it
 - [ ] Core path exercised end-to-end, not just imported/loaded
 - [ ] Output validated with a real-bar check from the table above, not a log read
+- [ ] Every verification check used here was mutation-tested (see below)
 - [ ] No remaining honest-red items for in-scope work
+- [ ] Any skipped check or honest-red is reported with the exact failing output and reason, not silently green or summarized
 - [ ] Honest status document exists: what was proven, what evidence supports it, what was not proven
 
 ## Self-Check: Mutation-Test the Verifier
