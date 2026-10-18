@@ -1,3 +1,5 @@
+> **Archived October 17, 2026.** Canonical copy: `skills/proof-gate-lite/` in [dev-rigor-stack-lite](https://github.com/scottconverse/dev-rigor-stack-lite). As of [commit 9855340](https://github.com/scottconverse/dev-rigor-stack-lite/commit/9855340) that copy restores this repo's wording where -lite had loosened it: "Drive to zero", mutation-test every verifier, and the broad trigger list. Install from -lite. This repository is read-only; history and issues are preserved.
+
 # proof-gate
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
